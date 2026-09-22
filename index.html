@@ -1,0 +1,41 @@
+<!-- Task 1: E-commerce -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abuzar Jan Store essentials for getting outside.">
+  <title>Abuzar Jan Store | Everyday, outdoors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/detail.css">
+  <link rel="stylesheet" href="/auth.css">
+</head>
+<body>
+  <div class="announcement">Free shipping on orders over $100 <span>·</span> Thoughtfully made for the everyday outside</div>
+  <header class="site-header">
+    <a class="logo" href="#">ABUZAR JAN STORE</a>
+    <nav aria-label="Primary navigation"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#journal">Journal</a></nav>
+    <div class="header-actions"><button class="account-button" id="account-button">Sign in</button><button class="cart-button" id="cart-button" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">New season / 2025</p><h1>Made for the<br><em>long way home.</em></h1><p>Considered essentials for wherever the day takes you. Built with better materials, made to stay awhile.</p><a class="primary-button" href="#shop">Explore the collection <span>→</span></a></div>
+      <div class="hero-image"><span class="hero-stamp">EST.<br><b>2018</b></span><div class="hero-caption">The great<br>everyday</div></div>
+    </section>
+
+    <section class="shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">The collection</p><h2>Good things,<br><em>well made.</em></h2></div><p class="section-note">Simple pieces for a life lived<br>outside the lines.</p></div><div class="filters" id="filters"></div><div class="product-grid" id="product-grid"></div></section>
+    <section class="story" id="story"><div class="story-image"></div><div class="story-copy"><p class="eyebrow">Our approach</p><h2>Less, but <em>better.</em></h2><p>We believe the best things earn their place. That means thoughtful materials, quiet details and products designed to be used, loved and passed on.</p><a href="#" class="text-link">Read our story <span>↗</span></a></div></section>
+    <section class="newsletter" id="journal"><p class="eyebrow">From the field notes</p><h2>A little good<br><em>in your inbox.</em></h2><form id="newsletter-form"><input type="email" placeholder="Your email address" aria-label="Your email address" required><button class="primary-button">Sign me up <span>→</span></button></form></section>
+  </main>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag"><div class="drawer-header"><h2>Your bag <span id="drawer-count">0 items</span></h2><button class="close-button" id="close-cart" aria-label="Close shopping bag">×</button></div><div id="cart-items" class="cart-items"></div><div class="cart-footer"><div class="total-row"><span>Subtotal</span><strong id="cart-total">$0</strong></div><button class="primary-button checkout-button" id="checkout-button">Checkout <span>→</span></button><p>Taxes and shipping calculated at checkout.</p></div></aside><div class="overlay" id="overlay"></div>
+  <div class="modal" id="checkout-modal"><button class="close-button" id="close-checkout" aria-label="Close checkout">×</button><div id="checkout-content"></div></div>
+  <div class="modal" id="auth-modal"><button class="close-button" id="close-auth" aria-label="Close account dialog">×</button><div id="auth-content"></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

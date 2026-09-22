@@ -1,0 +1,12 @@
+<!-- Task 1: E-commerce -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Abuzar Jan Store | Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <div id="login-view" class="login-view"><div class="login-card"><p class="eyebrow">Abuzar Jan Store</p><h1>Store desk.</h1><p>Sign in to review your customers and orders.</p><form id="admin-login"><label>Email<input type="email" name="email" value="admin@harborpine.local" required></label><label>Password<input type="password" name="password" placeholder="Admin password" required></label><button>Open dashboard <span>→</span></button><small id="login-error"></small></form></div></div>
+  <div id="dashboard-view" hidden><header><a class="logo" href="/">ABUZAR JAN STORE</a><div><span id="admin-email">Admin</span><button id="logout">Sign out</button></div></header><main><div class="heading"><div><p class="eyebrow">Overview</p><h1>Good morning.</h1></div><span id="updated"></span></div><section class="metrics"><article><span>Customers</span><strong id="customers">0</strong><small>Registered accounts</small></article><article><span>Orders</span><strong id="orders">0</strong><small>All-time orders</small></article><article><span>Revenue</span><strong id="revenue">$0</strong><small>Confirmed order value</small></article><article><span>Products</span><strong id="products">0</strong><small>In your catalog</small></article></section><div class="columns"><section class="panel"><div class="panel-heading"><h2>Recent orders</h2><span>Latest activity</span></div><div class="table-wrap"><table><thead><tr><th>Order</th><th>Customer</th><th>Delivery address</th><th>Items</th><th>Total</th><th>Status</th></tr></thead><tbody id="orders-table"></tbody></table></div></section><section class="panel"><div class="panel-heading"><h2>Customers</h2><span>Newest first</span></div><div id="customers-list" class="customers-list"></div></section></div></main></div><script src="/admin.js"></script>
+</body>
+</html>
